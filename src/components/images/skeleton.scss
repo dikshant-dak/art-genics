@@ -1,0 +1,31 @@
+@import "../../mixins.scss";
+
+// .skeletonMain {
+//     height: 250px;
+//     width: 250px;
+//     margin: 0 auto;
+//     background-color: lime;
+//     animation-name: stretch;
+//     animation-duration: 2s;
+//     animation-timing-function: ease-out;
+//     animation-direction: alternate;
+//     animation-iteration-count: infinite;
+//     animation-play-state: running;
+// }
+
+// @keyframes stretch {
+//     0% {
+//         transform: scale(0.5);
+//         background-color: green;
+//         border-radius: 100%;
+//     }
+
+//     50% {
+//         background-color: orange;
+//     }
+
+//     100% {
+//         transform: scale(2);
+//         background-color: red;
+//     }
+// }

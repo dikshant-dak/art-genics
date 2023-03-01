@@ -1,0 +1,137 @@
+@import "../../mixins.scss";
+
+.article {
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    font-family: 'Encode Sans Expanded',sans-serif;
+    width: 95%;
+    height: 90%;
+    // align-items: center;
+    // justify-content: center;
+    display: flex;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    // margin-right: 65px;
+    // @include md {
+    //     width: 100%;
+    //     height: 100%;
+    // }
+
+    .articleInfo {
+        border-radius: 24px;
+        width: 100%;
+        // height: 100%;
+        // margin-right: 120px;
+
+        img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover; 
+            // margin-bottom: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            cursor: pointer;
+
+            @include md {
+                // height: 100px;
+                &:hover {
+                    transform: scale(1.02);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+
+        .extra {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .profile {
+                padding-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                // position: relative;
+
+                .profileImg {
+                    width: 70px;
+                    border-radius: 50%;
+                    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+                }
+
+                .listHeader {
+                    list-style-type: none;
+                    margin-left: 5px;
+
+                    .username {
+                        font-weight: 700;
+                        font-size: 10px;
+                        // line-height: 1.75rem;
+                        color: black;
+                        margin-bottom: 4px;
+                        @include md {
+                            font-size: 14px;
+                        }
+                    }
+                    .date {
+                        font-size: 8px;
+                        line-height: 20px;
+                        color: black;
+                        @include md {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .pLink {
+                    position: relative;
+                    display: block;
+                    margin-left: 15px;
+                    top: -24px;
+
+                    .listHeader2 {
+                        position: absolute;
+                        float: right;
+                        list-style-type: none;
+                        color: gray;
+                        left: 25px;
+                        font-size: 10px;
+                        @include md {
+                            font-size: 12px;
+                        }
+                        
+                        a {
+                            text-decoration: none;
+                            color: gray;
+
+                            .id {
+                                line-height: 25px;
+                                cursor: pointer;
+                                text-align: right;
+                                border-bottom: 1px solid gray;
+                                @include md {
+                                    &:hover {
+                                        color: black;
+                                    } 
+                                }
+                            }
+                        }
+
+                        
+
+                        .likes {
+                            text-align: right;
+                            display: flex;
+                            justify-content: space-evenly;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
